@@ -10,10 +10,10 @@ public class HotelApp {
 
        while(toRun) {
            System.out.println("Welcome to Hotel App");
-           System.out.println("Select a service:");
-           System.out.println("[1] Vehicle valet parking ");
-           System.out.println("[2] Luggage cart request ");
-           System.out.println("[3] Room Cleaning ");
+           System.out.println("[1] Vehicle valet parking");
+           System.out.println("[2] Luggage cart request");
+           System.out.println("[3] Room Cleaning");
+           System.out.println("[4] Exit");
            System.out.print("Select a service: ");
            int option = sc.nextInt();
            switch(option) {
@@ -35,9 +35,12 @@ public class HotelApp {
                    frontDesk.houseKeeping.setRoomNumber(roomNumber);
                    frontDesk.houseKeeping.getService();
                    break;
+               case 4:
+                   System.out.println("Thank you for using the Hotel App");
+                   toRun = false;
+                   break;
                default:
                    System.out.println("Invalid option");
-                   toRun = false;
                    break;
            }
            System.out.println();
