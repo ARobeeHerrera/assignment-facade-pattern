@@ -3,9 +3,9 @@ package ServiceClass;
 import Interface.HotelService;
 
 public class Valet implements HotelService {
-    String plate;
+    private String plate;
 
-    public void setPlateNumber(String plate) {
+    public void setPlate(String plate) {
         this.plate = plate;
     }
 

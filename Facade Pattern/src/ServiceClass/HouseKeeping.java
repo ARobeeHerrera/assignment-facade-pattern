@@ -3,9 +3,9 @@ package ServiceClass;
 import Interface.HotelService;
 
 public class HouseKeeping implements HotelService {
-    String room;
+    private String room;
 
-    public void setRoomNumber(String room) {
+    public void setRoom(String room) {
         this.room = room;
     }
 

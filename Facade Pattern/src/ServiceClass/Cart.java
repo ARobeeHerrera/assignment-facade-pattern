@@ -3,9 +3,9 @@ package ServiceClass;
 import Interface.HotelService;
 
 public class Cart implements HotelService {
-    Integer carts;
+    private Integer carts;
 
-    public void setNumberOfCarts(Integer carts) {
+    public void setCarts(Integer carts) {
         this.carts = carts;
     }
 

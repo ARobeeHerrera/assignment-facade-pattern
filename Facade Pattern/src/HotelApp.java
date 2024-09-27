@@ -20,19 +20,19 @@ public class HotelApp {
                case 1:
                    System.out.print("Enter your plate number: ");
                    String plateNumber = sc.next();
-                   frontDesk.valet.setPlateNumber(plateNumber);
+                   frontDesk.valet.setPlate(plateNumber);
                    frontDesk.valet.getService();
                    break;
                case 2:
                    System.out.print("How many cart do you need: ");
                    Integer numberOfCart = sc.nextInt();
-                   frontDesk.cart.setNumberOfCarts(numberOfCart);
+                   frontDesk.cart.setCarts(numberOfCart);
                    frontDesk.cart.getService();
                    break;
                case 3:
                    System.out.print("Room number: ");
                    String roomNumber = sc.next();
-                   frontDesk.houseKeeping.setRoomNumber(roomNumber);
+                   frontDesk.houseKeeping.setRoom(roomNumber);
                    frontDesk.houseKeeping.getService();
                    break;
                case 4:
